@@ -1,0 +1,12 @@
+﻿  sintactico.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Sintactico\Sintactico\casa1.h(141,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Sintactico\Sintactico\casa1.h(190,28): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Sintactico\Sintactico\casa1.h(444,9): warning C4101: 'cs': variable local sin referencia
+C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Sintactico\Sintactico\casa1.h(444,6): warning C4101: 'i': variable local sin referencia
+  Generando código
+  0 of 1181 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Sintactico.vcxproj -> C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Sintactico\Sintactico\x64\Release\Sintactico.exe

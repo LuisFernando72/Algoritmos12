@@ -1,0 +1,9 @@
+﻿  A_Thomson.cpp
+C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Thomson\A_Thomson\fin_proceso.h(466,37): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  The contents of <filesystem> are available only with C++17 or later.
+  Generando código
+  3 of 1029 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  Generación de código finalizada
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  A_Thomson.vcxproj -> C:\Users\Luis Fernando Paxel\Videos\PROYECTO LL\Algoritmo_Thomson\A_Thomson\x64\Release\A_Thomson.exe

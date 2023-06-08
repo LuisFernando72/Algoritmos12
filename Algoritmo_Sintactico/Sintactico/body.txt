@@ -1,0 +1,77 @@
+<section class = "table__body">
+<table>
+<tnd>
+<tr>
+<th>Contador<span class = "icon-arrow">&UpArrow; </span></th>
+<th>Estado <span class = "icon-arrow">&UpArrow; </span></th>
+<th>transicion <span class = "icon - arrow">&UpArrow; </span></th>
+<th>Estado<span class = "icon-arrow">&UpArrow; </span></th>
+</tr>
+</tnd><tbody>
+<tr>
+<td>0</td>
+
+<td>D</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>0</td>
+
+<td>D</td>
+<td>b</td>
+<td>A</td>
+</tr>
+<tr>
+<td>1</td>
+
+<td>C</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+
+<td>C</td>
+<td>b</td>
+<td>C</td>
+</tr>
+<tr>
+<td>2</td>
+
+<td>B</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>2</td>
+
+<td>B</td>
+<td>b</td>
+<td>D</td>
+</tr>
+<tr>
+<td>3</td>
+
+<td>A</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>3</td>
+
+<td>A</td>
+<td>b</td>
+<td>A</td>
+</tr>
+</tbody></table>
+<br><br><h5>Grafica AFD</h4> <pre class="mermaid"> 
+flowchart LR
+D((D))--a-->B((B))
+D((D))--b-->A((A))
+C((C))--a-->B((B))
+C((C))--b-->C((C))
+B((B))--a-->B((B))
+B((B))--b-->D((D))
+A((A))--a-->B((B))
+A((A))--b-->A((A))

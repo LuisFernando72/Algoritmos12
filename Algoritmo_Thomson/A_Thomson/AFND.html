@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFND</title>
+    <link rel="stylesheet" href="style.css" />
+   <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main class="table tabla">
+      <section class="table__header">
+        <h1>Grafica árbol</h1>
+        <div class="input-group">
+  <h6 id="txthora" style="font-size: 22px;"></h6>
+          <img src="umgg.png" alt="" />
+        </div>
+      </section>
+
+        
+      <section class = "table__body">
+<table>
+<thead>
+<tr>
+<th>Contador<span class = "icon-arrow">&UpArrow; </span></th>
+<th>EstadoInicio <span class = "icon-arrow">&UpArrow; </span></th>
+<th>Transicion <span class = "icon - arrow">&UpArrow; </span></th>
+<th>EstadoFin<span class = "icon-arrow">&UpArrow; </span></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+
+<td>0</td>
+<td>a</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+
+<td>1</td>
+<td>e</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3</td>
+
+<td>2</td>
+<td>b</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+
+<td>3</td>
+<td>e</td>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+
+<td>4</td>
+<td>e</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+
+<td>4</td>
+<td>e</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+
+<td>5</td>
+<td>e</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+
+<td>5</td>
+<td>e</td>
+<td>4</td>
+</tr>
+<tr>
+<td>9</td>
+
+<td>6</td>
+<td>e</td>
+<td>4</td>
+</tr>
+<tr>
+<td>10</td>
+
+<td>6</td>
+<td>e</td>
+<td>7</td>
+</tr>
+<tr>
+<td>11</td>
+
+<td>7</td>
+<td>a</td>
+<td>9</td>
+</tr>
+<tr>
+<td>12</td>
+
+<td>9</td>
+<td>b</td>
+<td>11</td>
+</tr>
+<tr>
+<td>13</td>
+
+<td>11</td>
+<td>b</td>
+<td>13</td>
+</tr>
+<tr>
+<td>14</td>
+
+<td>13</td>
+<td>e</td>
+<td>18</td>
+</tr>
+<tr>
+<td>15</td>
+
+<td>13</td>
+<td>e</td>
+<td>21</td>
+</tr>
+<tr>
+<td>16</td>
+
+<td>14</td>
+<td>a</td>
+<td>15</td>
+</tr>
+<tr>
+<td>17</td>
+
+<td>15</td>
+<td>e</td>
+<td>19</td>
+</tr>
+<tr>
+<td>18</td>
+
+<td>16</td>
+<td>b</td>
+<td>17</td>
+</tr>
+<tr>
+<td>19</td>
+
+<td>17</td>
+<td>e</td>
+<td>19</td>
+</tr>
+<tr>
+<td>20</td>
+
+<td>18</td>
+<td>e</td>
+<td>14</td>
+</tr>
+<tr>
+<td>21</td>
+
+<td>18</td>
+<td>e</td>
+<td>16</td>
+</tr>
+<tr>
+<td>22</td>
+
+<td>19</td>
+<td>e</td>
+<td>21</td>
+</tr>
+<tr>
+<td>23</td>
+
+<td>19</td>
+<td>e</td>
+<td>18</td>
+</tr>
+</tbody></table>
+<h6>Expresion regular: (a|b)*abb(a|b)*</h6>
+<h6>Expresion de sufijo: ab|*a.b.b.ab|*.</h6>
+<h6>Comienzo del estado: 6</h6>
+<h6>Fin del estado: 21</h6>
+<h4>AFND</h4>
+ <pre class="mermaid"> 
+flowchart LR
+0((0))--a-->1((1))
+1((1))--e-->5((5))
+2((2))--b-->3((3))
+3((3))--e-->5((5))
+4((4))--e-->0((0))
+4((4))--e-->2((2))
+5((5))--e-->7((7))
+5((5))--e-->4((4))
+6((6:Inicio))--e-->4((4))
+6((6:Inicio))--e-->7((7))
+7((7))--a-->9((9))
+9((9))--b-->11((11))
+11((11))--b-->13((13))
+13((13))--e-->18((18))
+13((13))--e-->21(21:Fin)
+14((14))--a-->15((15))
+15((15))--e-->19((19))
+16((16))--b-->17((17))
+17((17))--e-->19((19))
+18((18))--e-->14((14))
+18((18))--e-->16((16))
+19((19))--e-->21(21:Fin)
+19((19))--e-->18((18))
+  </pre>
+        <script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        </script>
+      </section>
+    </main>
+ <script>
+      let txthora = document.querySelector("#txthora");
+      showTime();
+      function showTime() {
+        myDate = new Date();
+        hours = myDate.getHours();
+        minutes = myDate.getMinutes();
+        seconds = myDate.getSeconds();
+        if (hours < 10) hours = 0 + hours;
+
+        if (minutes < 10) minutes = "0" + minutes;
+
+        if (seconds < 10) seconds = "0" + seconds;
+
+        $("#txthora").text(hours + ":" + minutes + ":" + seconds);
+        setTimeout("showTime()", 1000);
+      }
+    </script>
+  </body>
+</html>

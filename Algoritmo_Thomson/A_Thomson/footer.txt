@@ -1,0 +1,26 @@
+  </pre>
+        <script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        </script>
+      </section>
+    </main>
+ <script>
+      let txthora = document.querySelector("#txthora");
+      showTime();
+      function showTime() {
+        myDate = new Date();
+        hours = myDate.getHours();
+        minutes = myDate.getMinutes();
+        seconds = myDate.getSeconds();
+        if (hours < 10) hours = 0 + hours;
+
+        if (minutes < 10) minutes = "0" + minutes;
+
+        if (seconds < 10) seconds = "0" + seconds;
+
+        $("#txthora").text(hours + ":" + minutes + ":" + seconds);
+        setTimeout("showTime()", 1000);
+      }
+    </script>
+  </body>
+</html>

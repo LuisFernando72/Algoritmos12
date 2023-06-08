@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFND</title>
+    <link rel="stylesheet" href="style.css" />
+   <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main class="table tabla">
+      <section class="table__header">
+        <h1>Grafica árbol</h1>
+        <div class="input-group">
+  <h6 id="txthora" style="font-size: 22px;"></h6>
+          <img src="umgg.png" alt="" />
+        </div>
+      </section>
+
+        
+      <section class = "table__body">
+<table>
+<tnd>
+<tr>
+<th>Contador<span class = "icon-arrow">&UpArrow; </span></th>
+<th>Estado <span class = "icon-arrow">&UpArrow; </span></th>
+<th>transicion <span class = "icon - arrow">&UpArrow; </span></th>
+<th>Estado<span class = "icon-arrow">&UpArrow; </span></th>
+</tr>
+</tnd><tbody>
+<tr>
+<td>0</td>
+
+<td>D</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>0</td>
+
+<td>D</td>
+<td>b</td>
+<td>A</td>
+</tr>
+<tr>
+<td>1</td>
+
+<td>C</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+
+<td>C</td>
+<td>b</td>
+<td>C</td>
+</tr>
+<tr>
+<td>2</td>
+
+<td>B</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>2</td>
+
+<td>B</td>
+<td>b</td>
+<td>D</td>
+</tr>
+<tr>
+<td>3</td>
+
+<td>A</td>
+<td>a</td>
+<td>B</td>
+</tr>
+<tr>
+<td>3</td>
+
+<td>A</td>
+<td>b</td>
+<td>A</td>
+</tr>
+</tbody></table>
+<br><br><h5>Grafica AFD</h4> <pre class="mermaid"> 
+flowchart LR
+D((D))--a-->B((B))
+D((D))--b-->A((A))
+C((C))--a-->B((B))
+C((C))--b-->C((C))
+B((B))--a-->B((B))
+B((B))--b-->D((D))
+A((A))--a-->B((B))
+A((A))--b-->A((A))
+  </pre>
+        <script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        </script>
+      </section>
+    </main>
+ <script>
+      let txthora = document.querySelector("#txthora");
+      showTime();
+      function showTime() {
+        myDate = new Date();
+        hours = myDate.getHours();
+        minutes = myDate.getMinutes();
+        seconds = myDate.getSeconds();
+        if (hours < 10) hours = 0 + hours;
+
+        if (minutes < 10) minutes = "0" + minutes;
+
+        if (seconds < 10) seconds = "0" + seconds;
+
+        $("#txthora").text(hours + ":" + minutes + ":" + seconds);
+        setTimeout("showTime()", 1000);
+      }
+    </script>
+  </body>
+</html>
